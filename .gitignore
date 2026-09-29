@@ -1,0 +1,44 @@
+# ---------- 依赖与构建产物 ----------
+node_modules/
+.webpack/
+.build/
+out/
+release/
+*.tsbuildinfo
+
+# ---------- QA 证据输出（仅保留人工验收清单）----------
+qa/*
+!qa/manual-checklist.md
+
+# ---------- 本地工作目录与缓存 ----------
+.workbuddy/
+tmp/
+.cache/
+
+# ---------- 环境变量与本地配置 ----------
+.env
+.env.*
+!.env.example
+
+# ---------- 日志 ----------
+*.log
+
+# ---------- 其他构建产物与缓存 ----------
+dist/
+coverage/
+.pnpm-store/
+.eslintcache
+
+# ---------- 编辑器与 IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统噪声 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk

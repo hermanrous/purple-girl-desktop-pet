@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 5,
+  "app": {
+    "name": "紫帽少女桌宠",
+    "appId": "com.purplegirl.desktopet",
+    "version": "1.0.0",
+    "language": "zh-CN"
+  },
+  "targets": {
+    "windows": { "enabled": true, "arch": "x64" },
+    "macos": { "enabled": false, "arch": "current" }
+  },
+  "character": {
+    "inputType": "single-image",
+    "coreAsset": "core-ip/core-ip.png",
+    "displayName": "小紫",
+    "archetype": "person",
+    "personality": ["活泼", "开朗", "元气", "有点调皮"],
+    "preserveTraits": ["紫色渔夫帽", "黑色长直发", "紫色连帽衫", "白色百褶裙", "白色厚底运动鞋", "大眼睛星光高光", "3D Q版黏土风格"],
+    "style": "preserve",
+    "mirrorSafe": true
+  },
+  "assetPipeline": {
+    "backgroundMode": "semantic-cutout",
+    "segmentationBackend": "auto",
+    "subjectKind": "illustration",
+    "generationBackground": "transparent-grid",
+    "backgroundTolerance": 24,
+    "edgeFeather": 10,
+    "safeMargin": 24,
+    "targetOccupancy": 0.76
+  },
+  "experience": {
+    "theme": {
+      "primary": "#9B7ED8",
+      "accent": "#C9B3F0",
+      "background": "#F5F0FF",
+      "surface": "#FFFFFF",
+      "text": "#3D2E5C",
+      "muted": "#8E7CA8",
+      "cornerRadius": 20
+    },
+    "petSizing": {
+      "baseWindowPx": 220,
+      "defaultScale": 0.8
+    },
+    "interactions": [
+      {
+        "id": "jump",
+        "emoji": "⬆️",
+        "label": "跳一下",
+        "stateId": "jump",
+        "durationMs": 1200,
+        "affectionGain": 2,
+        "feedback": ["哇！跳得好高！", "再来一次嘛～", "嘿嘿，厉害吧！", "我还能跳更高！"]
+      },
+      {
+        "id": "squash",
+        "emoji": "🫧",
+        "label": "弹一弹",
+        "stateId": "squash",
+        "durationMs": 1000,
+        "affectionGain": 2,
+        "feedback": ["啵～弹回来了！", "像QQ糖一样～", "压扁了又弹回来！", "好有弹性呀！"]
+      },
+      {
+        "id": "hop-left",
+        "emoji": "⬅️",
+        "label": "向左跳",
+        "stateId": "hop-left",
+        "durationMs": 1100,
+        "affectionGain": 2,
+        "feedback": ["左边有什么？", "蹦蹦跳跳真开心～", "我往左跑啦！", "追不上我吧～"]
+      },
+      {
+        "id": "hop-right",
+        "emoji": "➡️",
+        "label": "向右跳",
+        "stateId": "hop-right",
+        "durationMs": 1100,
+        "affectionGain": 2,
+        "feedback": ["右边看看～", "蹦跶蹦跶！", "我往右跑啦！", "这边风景不错～"]
+      }
+    ]
+  },
+  "motion": {
+    "breathing": { "enabled": true, "periodMs": 3200, "scaleX": 0.012, "scaleY": 0.02 },
+    "squashStretch": { "enabled": true, "durationMs": 280, "intensity": 0.07 },
+    "idleIntervalMs": { "min": 8000, "max": 15000 }
+  },
+  "features": {
+    "transparentWindow": true,
+    "drag": true,
+    "tray": true,
+    "edgeSnap": false,
+    "reminders": false,
+    "interactions": true,
+    "relationship": true,
+    "filePocket": false,
+    "dashboard": false,
+    "typingReaction": false,
+    "autonomousMovement": false
+  },
+  "states": [
+    {
+      "id": "idle",
+      "triggers": ["app:start", "ambient:idle"],
+      "frames": ["idle-01.png", "idle-02.png", "idle-03.png", "idle-04.png"],
+      "frameDurationMs": 900,
+      "loop": true,
+      "priority": 10,
+      "interrupt": "resume",
+      "cooldownMs": 0,
+      "direction": "neutral",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": true
+    },
+    {
+      "id": "blink",
+      "triggers": ["ambient:blink"],
+      "frames": ["blink-01.png", "blink-02.png", "blink-03.png", "blink-04.png", "blink-05.png"],
+      "frameDurationMs": 75,
+      "loop": false,
+      "priority": 30,
+      "interrupt": "restart",
+      "cooldownMs": 2500,
+      "direction": "neutral",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": true
+    },
+    {
+      "id": "happy",
+      "triggers": ["pointer:tap"],
+      "frames": ["happy-01.png", "happy-02.png", "happy-03.png", "happy-04.png", "happy-05.png"],
+      "frameDurationMs": 100,
+      "loop": false,
+      "priority": 70,
+      "interrupt": "restart",
+      "cooldownMs": 200,
+      "direction": "neutral",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": true
+    },
+    {
+      "id": "jump",
+      "triggers": ["interaction:jump"],
+      "frames": ["jump-01.png", "jump-02.png", "jump-03.png", "jump-04.png", "jump-05.png"],
+      "frameDurationMs": 120,
+      "loop": false,
+      "priority": 85,
+      "interrupt": "restart",
+      "cooldownMs": 300,
+      "direction": "neutral",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": true
+    },
+    {
+      "id": "squash",
+      "triggers": ["interaction:squash"],
+      "frames": ["squash-01.png", "squash-02.png", "squash-03.png", "squash-04.png", "squash-05.png"],
+      "frameDurationMs": 110,
+      "loop": false,
+      "priority": 85,
+      "interrupt": "restart",
+      "cooldownMs": 300,
+      "direction": "neutral",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": true
+    },
+    {
+      "id": "hop-left",
+      "triggers": ["interaction:hop-left"],
+      "frames": ["hop-left-01.png", "hop-left-02.png", "hop-left-03.png", "hop-left-04.png", "hop-left-05.png"],
+      "frameDurationMs": 110,
+      "loop": false,
+      "priority": 85,
+      "interrupt": "restart",
+      "cooldownMs": 300,
+      "direction": "left",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": false
+    },
+    {
+      "id": "hop-right",
+      "triggers": ["interaction:hop-right"],
+      "frames": ["hop-right-01.png", "hop-right-02.png", "hop-right-03.png", "hop-right-04.png", "hop-right-05.png"],
+      "frameDurationMs": 110,
+      "loop": false,
+      "priority": 85,
+      "interrupt": "restart",
+      "cooldownMs": 300,
+      "direction": "right",
+      "anchor": { "x": 0.5, "y": 0.95 },
+      "mirrorSafe": false
+    }
+  ],
+  "storage": {
+    "userData": "app-user-data",
+    "filePocket": "documents-app-name"
+  },
+  "build": {
+    "windows": { "arch": "x64", "installer": "squirrel", "portable": "zip" },
+    "macos": { "arch": "current", "diskImage": "dmg", "portable": "zip" },
+    "timeoutMinutes": 20,
+    "unsigned": true
+  }
+}

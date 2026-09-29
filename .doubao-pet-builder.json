@@ -1,0 +1,26 @@
+{
+  "builder": "doubao-desktop-pet-builder",
+  "templateContractVersion": 5,
+  "specSchemaVersion": 5,
+  "criticalFileHashes": {
+    "package.json": "77922b44b20c801bc4390f25b5577c3e3eba0d4943da3c7fac52600a405e5e07",
+    "package-lock.json": "972666c449aed3e4a6010cce24246967225c2c0006601af6e4e56f09c567ecf4",
+    "forge.config.js": "855b31f685975f1b5bca03c3f9eede85ad3e95e9fc0650a57a9d7ef080331c33",
+    "webpack.main.config.js": "9854a107cc89f6fa14b64eb4f039e1b1f964e2052cdad6cb2903c9855e56929e",
+    "webpack.renderer.config.js": "f0cbfe9f4f805126d0dd854b4024df83b2d08c2d67145ecae6bc29e5268ddda1",
+    "src/main.ts": "d5552fe826e687d8a17e32e3374ba18a034822f85ece7ecbbdbe5271e15153f7",
+    "src/preload.ts": "5f644a464ffd4c12666903eef6909569d83c593132dbb75b89e6f06b2f98b06c",
+    "src/shared/contracts.ts": "efaa21dfd2a6a0207a85001f4cc9434477ecd881cb07a11cca54f1ccfce09252",
+    "tools/process-assets.mjs": "b250726741cc1cd68127ad989b5c925be8a7338c62a98efaf20464a2166671e4",
+    "tools/qa-assets.mjs": "d8aeaa1810da1499db89e39c00a29336587d27c2ad828d97f7bf34f4c14be980",
+    "tools/qa-experience.mjs": "580d5f83aa4dac97cc568b3b340407f7cef426875be03f3dde596c4021a11300",
+    "tools/qa-ui.mjs": "2fc8417689023714595de148ba9fb8de73ea5b0648ef97c69efe55977995324f",
+    "tools/validate-spec.mjs": "4d38bbf46c0f4ece77d26e1ca0834b6bc3406ab70babb3eae8477071ed8a1f4a",
+    "tools/validate-dev-contract.mjs": "65a35e1bc95525080d790e7c3b37273ecbe3db1c20b6bda345ca1764651ee347",
+    "tools/validate-asset-links.mjs": "f4af80b3fb2ea9a5050b97cfbb71b83281d9685960c5d828bcda41f5128450c4",
+    "tools/preflight.mjs": "6610db5da77d9bc221f11cbbb0ef74b4474ce2e77e02ed0a2fe37fd778ec8d7b",
+    "tools/run-dev.mjs": "17850e7ad9c0abe0866d8164c2e2d1d301418ea697c3282fd45ce9afbcea81f7",
+    "tools/run-build.mjs": "8f9f44e36834c4d2b1477ca73dc81a60991d8eb3ce45dfbbfb5bfcaa1ffebebe",
+    "tools/activity-lock.mjs": "a68207643c99891d0348ee81f80a36159fcac3c7af927f4e42fe99c5b0cf7f51"
+  }
+}
