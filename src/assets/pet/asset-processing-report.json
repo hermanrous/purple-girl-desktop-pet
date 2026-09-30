@@ -1,0 +1,1407 @@
+{
+  "schemaVersion": 5,
+  "scope": "all",
+  "backgroundMode": "semantic-cutout",
+  "segmentationBackend": "auto",
+  "subjectKind": "illustration",
+  "generationBackground": "transparent-grid",
+  "threshold": 24,
+  "feather": 10,
+  "safeMargin": 24,
+  "targetOccupancy": 0.76,
+  "trayIcon": {
+    "path": "src/assets/tray/tray-icon.png",
+    "width": 32,
+    "height": 32
+  },
+  "assets": [
+    {
+      "ok": true,
+      "name": "idle-01.png",
+      "state": "idle",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.28617024421691895,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6646291391718583,
+      "sourceBounds": [
+        552,
+        72,
+        1500,
+        1974
+      ],
+      "sharedScale": 0.1998972250770812,
+      "normalizationCorrection": 1.0105263157894737,
+      "referenceVisibleSize": [
+        187.5,
+        384
+      ],
+      "groupSourceMaximum": [
+        967,
+        1946
+      ],
+      "outputBounds": [
+        160,
+        101,
+        351,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "idle-02.png",
+      "state": "idle",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2802581787109375,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6301725741592833,
+      "sourceBounds": [
+        544,
+        63,
+        1510,
+        1991
+      ],
+      "sharedScale": 0.1998972250770812,
+      "normalizationCorrection": 0.9948186528497409,
+      "referenceVisibleSize": [
+        187.5,
+        384
+      ],
+      "groupSourceMaximum": [
+        967,
+        1946
+      ],
+      "outputBounds": [
+        160,
+        101,
+        351,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "idle-03.png",
+      "state": "idle",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2577481269836426,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.622101327097017,
+      "sourceBounds": [
+        584,
+        50,
+        1476,
+        1995
+      ],
+      "sharedScale": 0.1998972250770812,
+      "normalizationCorrection": 0.987146529562982,
+      "referenceVisibleSize": [
+        187.5,
+        384
+      ],
+      "groupSourceMaximum": [
+        967,
+        1946
+      ],
+      "outputBounds": [
+        168,
+        101,
+        344,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "idle-04.png",
+      "state": "idle",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2794485092163086,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6637874597058271,
+      "sourceBounds": [
+        565,
+        69,
+        1488,
+        1979
+      ],
+      "sharedScale": 0.1998972250770812,
+      "normalizationCorrection": 1.0052356020942408,
+      "referenceVisibleSize": [
+        187.5,
+        384
+      ],
+      "groupSourceMaximum": [
+        967,
+        1946
+      ],
+      "outputBounds": [
+        163,
+        101,
+        348,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "blink-01.png",
+      "state": "blink",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.28949761390686035,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6570792186097253,
+      "sourceBounds": [
+        556,
+        69,
+        1522,
+        1979
+      ],
+      "sharedScale": 0.2019730010384216,
+      "normalizationCorrection": 1.0051948051948052,
+      "referenceVisibleSize": [
+        200,
+        387
+      ],
+      "groupSourceMaximum": [
+        1005,
+        1926
+      ],
+      "outputBounds": [
+        158,
+        98,
+        353,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "blink-02.png",
+      "state": "blink",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.29462218284606934,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.658058417871502,
+      "sourceBounds": [
+        552,
+        60,
+        1526,
+        1985
+      ],
+      "sharedScale": 0.2019730010384216,
+      "normalizationCorrection": 0.9948586118251928,
+      "referenceVisibleSize": [
+        200,
+        387
+      ],
+      "groupSourceMaximum": [
+        1005,
+        1926
+      ],
+      "outputBounds": [
+        158,
+        98,
+        353,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "blink-03.png",
+      "state": "blink",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.29203009605407715,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6522667339774721,
+      "sourceBounds": [
+        535,
+        85,
+        1526,
+        1977
+      ],
+      "sharedScale": 0.2019730010384216,
+      "normalizationCorrection": 1.013089005235602,
+      "referenceVisibleSize": [
+        200,
+        387
+      ],
+      "groupSourceMaximum": [
+        1005,
+        1926
+      ],
+      "outputBounds": [
+        155,
+        98,
+        357,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "blink-04.png",
+      "state": "blink",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2950122356414795,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6536747482495538,
+      "sourceBounds": [
+        532,
+        67,
+        1520,
+        1980
+      ],
+      "sharedScale": 0.2019730010384216,
+      "normalizationCorrection": 1,
+      "referenceVisibleSize": [
+        200,
+        387
+      ],
+      "groupSourceMaximum": [
+        1005,
+        1926
+      ],
+      "outputBounds": [
+        156,
+        98,
+        355,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "blink-05.png",
+      "state": "blink",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.30229878425598145,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6581246090881014,
+      "sourceBounds": [
+        520,
+        68,
+        1524,
+        1984
+      ],
+      "sharedScale": 0.2019730010384216,
+      "normalizationCorrection": 1,
+      "referenceVisibleSize": [
+        200,
+        387
+      ],
+      "groupSourceMaximum": [
+        1005,
+        1926
+      ],
+      "outputBounds": [
+        155,
+        98,
+        357,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "happy-01.png",
+      "state": "happy",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.27720165252685547,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.654438733122142,
+      "sourceBounds": [
+        549,
+        90,
+        1494,
+        1967
+      ],
+      "sharedScale": 0.203239289446186,
+      "normalizationCorrection": 1.0476225890105824,
+      "referenceVisibleSize": [
+        208,
+        387
+      ],
+      "groupSourceMaximum": [
+        1202,
+        1914
+      ],
+      "outputBounds": [
+        159,
+        96,
+        353,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "happy-02.png",
+      "state": "happy",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.29062581062316895,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6230582666942679,
+      "sourceBounds": [
+        513,
+        80,
+        1539,
+        1984
+      ],
+      "sharedScale": 0.203239289446186,
+      "normalizationCorrection": 0.997604786979686,
+      "referenceVisibleSize": [
+        208,
+        387
+      ],
+      "groupSourceMaximum": [
+        1202,
+        1914
+      ],
+      "outputBounds": [
+        152,
+        99,
+        359,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "happy-03.png",
+      "state": "happy",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2947707176208496,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.5553909431005919,
+      "sourceBounds": [
+        441,
+        98,
+        1642,
+        1949
+      ],
+      "sharedScale": 0.203239289446186,
+      "normalizationCorrection": 0.9366952423170628,
+      "referenceVisibleSize": [
+        208,
+        387
+      ],
+      "groupSourceMaximum": [
+        1202,
+        1914
+      ],
+      "outputBounds": [
+        142,
+        133,
+        370,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "happy-04.png",
+      "state": "happy",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.29602909088134766,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.633508441091954,
+      "sourceBounds": [
+        557,
+        76,
+        1580,
+        1989
+      ],
+      "sharedScale": 0.203239289446186,
+      "normalizationCorrection": 0.9974259931569824,
+      "referenceVisibleSize": [
+        208,
+        387
+      ],
+      "groupSourceMaximum": [
+        1202,
+        1914
+      ],
+      "outputBounds": [
+        153,
+        97,
+        359,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "happy-05.png",
+      "state": "happy",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.26849818229675293,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6518867247375465,
+      "sourceBounds": [
+        576,
+        74,
+        1479,
+        1984
+      ],
+      "sharedScale": 0.203239289446186,
+      "normalizationCorrection": 1.0618480545261366,
+      "referenceVisibleSize": [
+        208,
+        387
+      ],
+      "groupSourceMaximum": [
+        1202,
+        1914
+      ],
+      "outputBounds": [
+        164,
+        96,
+        347,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "jump-01.png",
+      "state": "jump",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2836456298828125,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6935999925375222,
+      "sourceBounds": [
+        575,
+        139,
+        1518,
+        1955
+      ],
+      "sharedScale": 0.2081326912787587,
+      "normalizationCorrection": 1.0026420125303972,
+      "referenceVisibleSize": [
+        196,
+        380
+      ],
+      "groupSourceMaximum": [
+        1061,
+        1869
+      ],
+      "outputBounds": [
+        158,
+        106,
+        354,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "jump-02.png",
+      "state": "jump",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.25777769088745117,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.5942502934981907,
+      "sourceBounds": [
+        544,
+        90,
+        1517,
+        1957
+      ],
+      "sharedScale": 0.2081326912787587,
+      "normalizationCorrection": 0.9711739268565699,
+      "referenceVisibleSize": [
+        196,
+        380
+      ],
+      "groupSourceMaximum": [
+        1061,
+        1869
+      ],
+      "outputBounds": [
+        158,
+        107,
+        354,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "jump-03.png",
+      "state": "jump",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2752213478088379,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6078180698087079,
+      "sourceBounds": [
+        509,
+        91,
+        1569,
+        1880
+      ],
+      "sharedScale": 0.2081326912787587,
+      "normalizationCorrection": 0.9505375573241364,
+      "referenceVisibleSize": [
+        196,
+        380
+      ],
+      "groupSourceMaximum": [
+        1061,
+        1869
+      ],
+      "outputBounds": [
+        151,
+        130,
+        360,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "jump-04.png",
+      "state": "jump",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2521183490753174,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6477936834264068,
+      "sourceBounds": [
+        578,
+        129,
+        1470,
+        1956
+      ],
+      "sharedScale": 0.2081326912787587,
+      "normalizationCorrection": 1.026529805149473,
+      "referenceVisibleSize": [
+        196,
+        380
+      ],
+      "groupSourceMaximum": [
+        1061,
+        1869
+      ],
+      "outputBounds": [
+        161,
+        96,
+        351,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "jump-05.png",
+      "state": "jump",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2804572582244873,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6767594654147753,
+      "sourceBounds": [
+        570,
+        112,
+        1499,
+        1980
+      ],
+      "sharedScale": 0.2081326912787587,
+      "normalizationCorrection": 0.9934457778639826,
+      "referenceVisibleSize": [
+        196,
+        380
+      ],
+      "groupSourceMaximum": [
+        1061,
+        1869
+      ],
+      "outputBounds": [
+        160,
+        99,
+        352,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "squash-01.png",
+      "state": "squash",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.24362397193908691,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6413191240985859,
+      "sourceBounds": [
+        592,
+        111,
+        1456,
+        1952
+      ],
+      "sharedScale": 0.2018681888946549,
+      "normalizationCorrection": 1.0445087189208568,
+      "referenceVisibleSize": [
+        184,
+        386
+      ],
+      "groupSourceMaximum": [
+        1126,
+        1927
+      ],
+      "outputBounds": [
+        165,
+        96,
+        347,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "squash-02.png",
+      "state": "squash",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.34032559394836426,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6761060982830077,
+      "sourceBounds": [
+        467,
+        90,
+        1592,
+        1964
+      ],
+      "sharedScale": 0.2018681888946549,
+      "normalizationCorrection": 0.9085943466282747,
+      "referenceVisibleSize": [
+        184,
+        386
+      ],
+      "groupSourceMaximum": [
+        1126,
+        1927
+      ],
+      "outputBounds": [
+        153,
+        141,
+        358,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "squash-03.png",
+      "state": "squash",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2359771728515625,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6144730454087733,
+      "sourceBounds": [
+        622,
+        82,
+        1463,
+        1994
+      ],
+      "sharedScale": 0.2018681888946549,
+      "normalizationCorrection": 1.0403619279733713,
+      "referenceVisibleSize": [
+        184,
+        386
+      ],
+      "groupSourceMaximum": [
+        1126,
+        1927
+      ],
+      "outputBounds": [
+        171,
+        96,
+        341,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "squash-04.png",
+      "state": "squash",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.27576160430908203,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6365027644771156,
+      "sourceBounds": [
+        554,
+        62,
+        1496,
+        1988
+      ],
+      "sharedScale": 0.2018681888946549,
+      "normalizationCorrection": 0.9802818522288512,
+      "referenceVisibleSize": [
+        184,
+        386
+      ],
+      "groupSourceMaximum": [
+        1126,
+        1927
+      ],
+      "outputBounds": [
+        163,
+        104,
+        348,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "squash-05.png",
+      "state": "squash",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2686891555786133,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6428920226359985,
+      "sourceBounds": [
+        572,
+        66,
+        1484,
+        1985
+      ],
+      "sharedScale": 0.2018681888946549,
+      "normalizationCorrection": 0.9974193505365445,
+      "referenceVisibleSize": [
+        184,
+        386
+      ],
+      "groupSourceMaximum": [
+        1126,
+        1927
+      ],
+      "outputBounds": [
+        164,
+        98,
+        347,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-left-01.png",
+      "state": "hop-left",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.30086779594421387,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6157944793104677,
+      "sourceBounds": [
+        519,
+        70,
+        1587,
+        1986
+      ],
+      "sharedScale": 0.20292123109024518,
+      "normalizationCorrection": 0.992257948053619,
+      "referenceVisibleSize": [
+        217,
+        383
+      ],
+      "groupSourceMaximum": [
+        1313,
+        1917
+      ],
+      "outputBounds": [
+        149,
+        99,
+        363,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-left-02.png",
+      "state": "hop-left",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.274552583694458,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.5865337697356425,
+      "sourceBounds": [
+        538,
+        80,
+        1578,
+        1965
+      ],
+      "sharedScale": 0.20292123109024518,
+      "normalizationCorrection": 1.0141183456369114,
+      "referenceVisibleSize": [
+        217,
+        383
+      ],
+      "groupSourceMaximum": [
+        1313,
+        1917
+      ],
+      "outputBounds": [
+        149,
+        97,
+        362,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-left-03.png",
+      "state": "hop-left",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.32961606979370117,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.5676225511831714,
+      "sourceBounds": [
+        373,
+        72,
+        1685,
+        1926
+      ],
+      "sharedScale": 0.20292123109024518,
+      "normalizationCorrection": 0.9115794225809467,
+      "referenceVisibleSize": [
+        217,
+        383
+      ],
+      "groupSourceMaximum": [
+        1313,
+        1917
+      ],
+      "outputBounds": [
+        135,
+        142,
+        376,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-left-04.png",
+      "state": "hop-left",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.3116567134857178,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6178547795507827,
+      "sourceBounds": [
+        507,
+        96,
+        1626,
+        1984
+      ],
+      "sharedScale": 0.20292123109024518,
+      "normalizationCorrection": 0.9777254914156001,
+      "referenceVisibleSize": [
+        217,
+        383
+      ],
+      "groupSourceMaximum": [
+        1313,
+        1917
+      ],
+      "outputBounds": [
+        145,
+        111,
+        366,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-left-05.png",
+      "state": "hop-left",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2864723205566406,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6396293238322013,
+      "sourceBounds": [
+        519,
+        74,
+        1501,
+        1984
+      ],
+      "sharedScale": 0.20292123109024518,
+      "normalizationCorrection": 1.0374970079206662,
+      "referenceVisibleSize": [
+        217,
+        383
+      ],
+      "groupSourceMaximum": [
+        1313,
+        1917
+      ],
+      "outputBounds": [
+        157,
+        96,
+        355,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-right-01.png",
+      "state": "hop-right",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.3122842311859131,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6386930007889704,
+      "sourceBounds": [
+        499,
+        72,
+        1565,
+        1993
+      ],
+      "sharedScale": 0.2023933402705515,
+      "normalizationCorrection": 0.9958497137545569,
+      "referenceVisibleSize": [
+        217,
+        384
+      ],
+      "groupSourceMaximum": [
+        1195,
+        1922
+      ],
+      "outputBounds": [
+        149,
+        98,
+        363,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-right-02.png",
+      "state": "hop-right",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.2851433753967285,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6003724787406002,
+      "sourceBounds": [
+        505,
+        86,
+        1575,
+        1945
+      ],
+      "sharedScale": 0.2023933402705515,
+      "normalizationCorrection": 1.0105823052798226,
+      "referenceVisibleSize": [
+        217,
+        384
+      ],
+      "groupSourceMaximum": [
+        1195,
+        1922
+      ],
+      "outputBounds": [
+        147,
+        105,
+        365,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-right-03.png",
+      "state": "hop-right",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.28757548332214355,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.5906113585228093,
+      "sourceBounds": [
+        490,
+        125,
+        1684,
+        1833
+      ],
+      "sharedScale": 0.2023933402705515,
+      "normalizationCorrection": 0.997584624182716,
+      "referenceVisibleSize": [
+        217,
+        384
+      ],
+      "groupSourceMaximum": [
+        1195,
+        1922
+      ],
+      "outputBounds": [
+        136,
+        140,
+        376,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-right-04.png",
+      "state": "hop-right",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.3143949508666992,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.6000349463882362,
+      "sourceBounds": [
+        499,
+        68,
+        1645,
+        1983
+      ],
+      "sharedScale": 0.2023933402705515,
+      "normalizationCorrection": 0.9621341369086256,
+      "referenceVisibleSize": [
+        217,
+        384
+      ],
+      "groupSourceMaximum": [
+        1195,
+        1922
+      ],
+      "outputBounds": [
+        145,
+        112,
+        367,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "hop-right-05.png",
+      "state": "hop-right",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "backgroundPalette": [],
+      "borderCoverage": 1,
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.30301880836486816,
+      "backgroundLikeForegroundRatio": 0,
+      "rectangularFill": 0.7000914393993644,
+      "sourceBounds": [
+        545,
+        74,
+        1502,
+        1968
+      ],
+      "sharedScale": 0.2023933402705515,
+      "normalizationCorrection": 1.0576184099338135,
+      "referenceVisibleSize": [
+        217,
+        384
+      ],
+      "groupSourceMaximum": [
+        1195,
+        1922
+      ],
+      "outputBounds": [
+        158,
+        96,
+        353,
+        484
+      ]
+    },
+    {
+      "ok": true,
+      "name": "core-ip/core-ip.png",
+      "state": "core-ip",
+      "cutoutBackend": "rembg:isnet-anime",
+      "cutoutCached": false,
+      "cutoutAttempts": [],
+      "backgroundInput": "real-alpha",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "foregroundRatio": 0.29235267639160156,
+      "rectangularFill": 0.6262108355224723,
+      "sourceBounds": [
+        508,
+        68,
+        1529,
+        1983
+      ],
+      "sharedScale": 0.20302713987473903,
+      "outputBounds": [
+        153,
+        96,
+        359,
+        484
+      ]
+    }
+  ]
+}
