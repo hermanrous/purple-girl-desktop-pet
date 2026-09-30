@@ -22,6 +22,25 @@ function state(id: string, overrides: Partial<PetState> = {}): PetState {
 
 const idle = state('idle', { loop: true, priority: 10, interrupt: 'resume' });
 
+test('interaction states cannot be assigned automatic triggers', () => {
+  const automaticallyTriggeredInteraction = state('jump', {
+    triggers: ['interaction:jump', 'app:start'],
+  });
+
+  assert.throws(
+    () => new PetStateMachine([idle, automaticallyTriggeredInteraction], 0),
+    /interaction state jump cannot use automatic trigger app:start/i,
+  );
+});
+
+test('idle remains on its first frame until an explicit state starts', () => {
+  const machine = new PetStateMachine([idle, state('jump')], 0);
+
+  assert.equal(machine.tick(0).frame, 'idle-1.png');
+  assert.equal(machine.tick(900).frame, 'idle-1.png');
+  assert.equal(machine.tick(10_000).frame, 'idle-1.png');
+});
+
 test('timed looping activity returns to idle', () => {
   const machine = new PetStateMachine([idle, state('play', { loop: true })], 0);
   assert.equal(machine.start('play', 10, 250), true);

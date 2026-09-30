@@ -33,15 +33,6 @@ html, body {
   transition: transform 0.1s ease-out;
 }
 
-.breathing {
-  animation: breathe var(--breath-period, 3.2s) ease-in-out infinite;
-}
-
-@keyframes breathe {
-  0%, 100% { transform: scale(1, 1); }
-  50% { transform: scale(var(--breath-scale-x, 1.012), var(--breath-scale-y, 1.022)); }
-}
-
 .squash {
   animation: squash var(--squash-duration, 0.32s) ease-out;
 }

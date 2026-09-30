@@ -16,6 +16,30 @@ try {
   assert.deepEqual(initial.roles.map((item) => item.role).sort(), ['dashboard', 'pet', 'reminder']);
   assert.equal(initial.roles.every((item) => !item.destroyed), true);
 
+  const passiveActivity = await windows.pet.evaluate(async () => {
+    const container = document.getElementById('pet-container');
+    const sprite = document.getElementById('pet-sprite') as HTMLImageElement | null;
+    if (!container || !sprite) throw new Error('pet elements are missing');
+    const states = new Set([container.dataset.state ?? '']);
+    const frames = new Set([sprite.src]);
+    const observer = new MutationObserver(() => {
+      states.add(container.dataset.state ?? '');
+      frames.add(sprite.src);
+    });
+    observer.observe(container, { attributes: true, attributeFilter: ['data-state'] });
+    observer.observe(sprite, { attributes: true, attributeFilter: ['src'] });
+    await new Promise((resolve) => setTimeout(resolve, 7_000));
+    observer.disconnect();
+    return {
+      states: [...states],
+      frames: [...frames],
+      cssAnimationName: getComputedStyle(sprite).animationName,
+    };
+  });
+  assert.deepEqual(passiveActivity.states, ['idle'], 'the pet must not enter an automatic state without input');
+  assert.equal(passiveActivity.frames.length, 1, 'the pet must keep one idle frame without input');
+  assert.equal(passiveActivity.cssAnimationName, 'none', 'the pet must not run a CSS animation without input');
+
   await windows.pet.evaluate(() => {
     const container = document.getElementById('pet-container');
     if (!container) throw new Error('pet container is missing');
@@ -150,7 +174,7 @@ try {
   } catch {
     // The normal path already closed the application.
   }
-  await rm(userData, { recursive: true, force: true });
+  await rm(userData, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
 }
 }
 

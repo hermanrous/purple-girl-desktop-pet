@@ -21,6 +21,13 @@ export class PetStateMachine {
   private readonly completedAt = new Map<string, number>();
 
   constructor(states: PetState[], now = 0, idleStateId = 'idle') {
+    for (const state of states) {
+      if (!state.triggers.some((trigger) => trigger.startsWith('interaction:'))) continue;
+      const automaticTrigger = state.triggers.find((trigger) => trigger.startsWith('app:') || trigger.startsWith('ambient:'));
+      if (automaticTrigger) {
+        throw new Error(`Interaction state ${state.id} cannot use automatic trigger ${automaticTrigger}`);
+      }
+    }
     this.states = new Map(states.map((state) => [state.id, state]));
     const idle = this.states.get(idleStateId);
     if (!idle) throw new Error(`Missing idle state: ${idleStateId}`);
@@ -67,7 +74,9 @@ export class PetStateMachine {
     const { state } = this.active;
     const frameCount = Math.max(1, state.frames.length);
     const rawIndex = Math.floor(elapsed / Math.max(1, state.frameDurationMs));
-    const frameIndex = state.loop
+    const frameIndex = state.id === this.idleState.id
+      ? 0
+      : state.loop
       ? rawIndex % frameCount
       : Math.min(frameCount - 1, rawIndex);
     const frameChanged = frameIndex !== this.active.frameIndex;

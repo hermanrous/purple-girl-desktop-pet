@@ -32,22 +32,20 @@ for (const state of petSpec.states) {
 
 const stateMachine = new PetStateMachine(petSpec.states, performance.now());
 container.dataset.state = stateMachine.currentStateId();
-let idleTimer: ReturnType<typeof setTimeout> | null = null;
-let blinkTimer: ReturnType<typeof setTimeout> | null = null;
 let animationFrame: number | null = null;
 
-// 点击轮流互动索引：jump → squash → hop-left → hop-right → 循环
-const CLICK_CYCLE = ['jump', 'squash', 'hop-left', 'hop-right'];
-let clickCycleIndex = 0;
+// 点击时的随机气泡文案
+const CLICK_BUBBLES = [
+  '嘿嘿～',
+  '你好呀！',
+  '找我玩吗？',
+  '今天也要开心哦！',
+  '戳戳～',
+  '我在这儿呢！',
+  '嘻嘻～',
+  '有什么事吗？',
+];
 let bubbleTimer: ReturnType<typeof setTimeout> | null = null;
-
-// 设置呼吸动画
-const breathing = petSpec.motion.breathing;
-if (breathing.enabled) {
-  document.documentElement.style.setProperty('--breath-period', `${breathing.periodMs}ms`);
-  document.documentElement.style.setProperty('--breath-scale-x', `${1 + breathing.scaleX}`);
-  document.documentElement.style.setProperty('--breath-scale-y', `${1 + breathing.scaleY}`);
-}
 
 // 挤压回弹
 function playSquash(): void {
@@ -91,50 +89,12 @@ function animate(timestamp: number): void {
   animationFrame = requestAnimationFrame(animate);
 }
 
-// 调度空闲事件（眨眼、随机动作）
-function scheduleIdleEvents(): void {
-  if (blinkTimer) clearTimeout(blinkTimer);
-  if (idleTimer) clearTimeout(idleTimer);
-
-  // 随机眨眼
-  const blinkDelay = 2000 + Math.random() * 4000;
-  blinkTimer = setTimeout(() => {
-    if (stateMachine.currentStateId() === 'idle') {
-      setState('blink');
-    }
-    scheduleIdleEvents();
-  }, blinkDelay);
-
-  // 随机空闲动作
-  const idleMin = petSpec.motion.idleIntervalMs.min;
-  const idleMax = petSpec.motion.idleIntervalMs.max;
-  const idleDelay = idleMin + Math.random() * (idleMax - idleMin);
-  idleTimer = setTimeout(() => {
-    scheduleIdleEvents();
-  }, idleDelay);
-}
-
-// 点击事件：轮流触发互动
-async function handleClick(): Promise<void> {
-  const interactionId = CLICK_CYCLE[clickCycleIndex];
-  if (!interactionId) return;
-  clickCycleIndex = (clickCycleIndex + 1) % CLICK_CYCLE.length;
+// 点击事件：播放开心动作 + 随机气泡
+function handleClick(): void {
   playSquash();
-  try {
-    const result = await window.petAPI?.interactions.trigger(interactionId);
-    if (result?.feedback) {
-      showFeedback(result.feedback);
-    }
-  } catch {
-    // IPC 失败时降级为本地状态切换
-    const interaction = petSpec.experience.interactions.find((i) => i.id === interactionId);
-    if (interaction) {
-      setState(interaction.stateId, interaction.durationMs);
-      const feedback = interaction.feedback[Math.floor(Math.random() * interaction.feedback.length)];
-      if (feedback) showFeedback(feedback);
-    }
-  }
-  scheduleIdleEvents();
+  setState('happy');
+  const bubble = CLICK_BUBBLES[Math.floor(Math.random() * CLICK_BUBBLES.length)];
+  if (bubble) showFeedback(bubble);
 }
 
 container.addEventListener('click', () => {
@@ -142,7 +102,7 @@ container.addEventListener('click', () => {
     suppressNextClick = false;
     return;
   }
-  void handleClick();
+  handleClick();
 });
 
 // 鼠标滚轮调整大小
@@ -227,7 +187,6 @@ container.addEventListener('contextmenu', (e) => {
 window.petAPI?.events.onStateActivity((activity: StateActivity) => {
   if (activity.stateId) {
     setState(activity.stateId, activity.durationMs);
-    scheduleIdleEvents();
   }
   if (activity.feedback) {
     showFeedback(activity.feedback);
@@ -262,9 +221,8 @@ async function init(): Promise<void> {
     const invalidSize = loadedAssets.find((image) => image.naturalWidth !== reference.naturalWidth || image.naturalHeight !== reference.naturalHeight);
     if (invalidSize) throw new Error('Runtime assets do not share one decoded frame size');
 
-    // 素材确认可用后再启动 idle 和动画循环。
+    // 素材确认可用后进入静止待机；动作只响应显式触发。
     setState('idle');
-    scheduleIdleEvents();
     animationFrame = requestAnimationFrame(animate);
 
     // 报告就绪

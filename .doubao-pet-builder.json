@@ -24,5 +24,5 @@
     "tools/run-build.mjs": "8f9f44e36834c4d2b1477ca73dc81a60991d8eb3ce45dfbbfb5bfcaa1ffebebe",
     "tools/activity-lock.mjs": "a68207643c99891d0348ee81f80a36159fcac3c7af927f4e42fe99c5b0cf7f51"
   },
-  "note": "Customized for purple girl pet: context menu, wheel zoom, click-cycle interactions"
+  "note": "Customized for purple girl pet: context menu, wheel zoom, explicitly triggered interactions"
 }

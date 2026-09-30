@@ -37,13 +37,6 @@
       transform-origin: bottom center;
       transition: transform 0.1s ease-out;
     }
-    .breathing {
-      animation: breathe var(--breath-period, 3.2s) ease-in-out infinite;
-    }
-    @keyframes breathe {
-      0%, 100% { transform: scale(1, 1); }
-      50% { transform: scale(var(--breath-scale-x, 1.012), var(--breath-scale-y, 1.022)); }
-    }
     .squash {
       animation: squash var(--squash-duration, 0.32s) ease-out;
     }
@@ -76,7 +69,7 @@
 </head>
 <body>
   <div id="pet-container">
-    <img id="pet-sprite" class="breathing" alt="桌宠" draggable="false">
+    <img id="pet-sprite" alt="桌宠" draggable="false">
     <div id="feedback-bubble"></div>
   </div>
 </body>

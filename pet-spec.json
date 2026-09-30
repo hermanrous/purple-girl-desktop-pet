@@ -84,9 +84,8 @@
     ]
   },
   "motion": {
-    "breathing": { "enabled": true, "periodMs": 3200, "scaleX": 0.012, "scaleY": 0.02 },
-    "squashStretch": { "enabled": true, "durationMs": 280, "intensity": 0.07 },
-    "idleIntervalMs": { "min": 8000, "max": 15000 }
+    "breathing": { "enabled": false, "periodMs": 3200, "scaleX": 0.012, "scaleY": 0.02 },
+    "squashStretch": { "enabled": true, "durationMs": 280, "intensity": 0.07 }
   },
   "features": {
     "transparentWindow": true,
